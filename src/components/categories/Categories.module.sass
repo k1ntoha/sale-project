@@ -1,0 +1,14 @@
+@import '../../styles/variables'
+@import '../../styles/mixins'
+
+.categories
+	@include size(100%, 100%)
+	@include flex(start, center, 20px, 30px, row, wrap)
+
+	.category
+		@include size(unset, 40px)
+		cursor: pointer
+		color: $darkGrey
+	.activeCategory
+		color: $black
+		@include size(unset, 40px)

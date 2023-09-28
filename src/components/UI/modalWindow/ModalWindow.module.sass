@@ -1,0 +1,30 @@
+@import '../../../styles/variables'
+@import '../../../styles/mixins'
+
+.modalWindow
+  @include size(100vw, 100vh)
+  @include flex(center, center)
+  z-index: 1000
+  position: fixed
+  left: 0
+  top: 0px
+  backdrop-filter: blur(3px)
+  background: rgba(0, 0, 0, 0.2)
+
+  .modalForm
+    @include size(300px, 500px)
+    @include flex(start, center)
+    background: $lightGrey
+    padding: 25px
+
+    .form
+      @include size(100%, 100%)
+      @include flex(center, center, 20px, 10px, column)
+
+      div
+        @include size(100%, 100%)
+        @include flex(start, center, 0px, 0px, row, wrap)	
+
+        select
+          @include size(170px, 30px)
+

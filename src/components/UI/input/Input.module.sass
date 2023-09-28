@@ -1,0 +1,26 @@
+@import '../../../styles/variables'
+@import '../../../styles/mixins'
+
+.input 
+	@include size(250px, 40px)
+	padding-left: 10px
+	padding-right: 35px
+	border: 1px solid $black
+	border-width: 0px 0px 1px 1px
+
+	font-size: 0.9rem
+	transition: all 0.2s
+
+
+	&[type='number'] 
+		padding-right: 10px
+
+
+	&:focus 
+		font-size: 1rem
+		padding-left: 15px
+		padding-bottom: 5px
+		-webkit-box-shadow: -7px 7px 0px 0px rgba(30, 30, 30, 0.26)
+		-moz-box-shadow: -7px 7px 0px 0px rgba(30, 30, 30, 0.26)
+		box-shadow: -7px 7px 0px 0px rgba(30, 30, 30, 0.26)
+

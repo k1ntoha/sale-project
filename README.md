@@ -1,0 +1,1 @@
+Sales project is a SPA providing sales from different markets, shops, boutiques for everyone who want to buy something on sale

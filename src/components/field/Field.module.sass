@@ -1,0 +1,25 @@
+@import '../../styles/variables'
+@import '../../styles/mixins'
+	
+.field 
+	position: relative
+	@include size(100%, 60px)
+	@include flex(center, start, 10px, 10px, column)
+
+
+	.fieldItem 
+		@include size(100%, 100%)
+		@include flex(center, center)
+
+		i 
+			margin: 0 auto
+			margin-left: -25px
+			font-size: 1rem
+			color: $red
+			cursor: pointer
+
+
+	.error 
+		color: $red
+		font-size: 0.9rem
+

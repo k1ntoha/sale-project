@@ -1,0 +1,32 @@
+@import './variables'
+@import './mixins'
+@include container
+
+
+.tabs
+	@include size(100%, 40px)
+	min-height: 40px
+	@include flex(start, center)
+	background: $lightGrey
+	border-radius: 10px
+	margin-bottom: 20px
+
+	.tab
+		@include size(100px, 100%)
+		@include flex(center, center)
+		cursor: pointer
+		border: 1px solid transparent
+		border-right-color: $red
+		transition: all 0.2s
+
+		&:hover
+			background: $red
+			color: $white
+
+		&:nth-child(1)
+			border-top-left-radius: 10px
+			border-bottom-left-radius: 10px
+			
+	.activeTab
+		background: $red
+		color: $white

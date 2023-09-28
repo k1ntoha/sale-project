@@ -1,0 +1,9 @@
+@import './variables'
+@import './mixins'
+@include container
+
+.container
+  @include flex(start, start, 20px, 20px, column, wrap)
+
+  .back
+    cursor: pointer

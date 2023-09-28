@@ -1,0 +1,27 @@
+@import '../../styles/variables'
+@import '../../styles/mixins'
+  
+.createSaleForm
+	@include size(100%, 100%)
+	@include flex(center, center, 10px, 10px, row, wrap)
+	@include border(1px, $black, 10px)
+	border-right-color: transparent
+	border-bottom-color: transparent
+	padding: 20px
+	box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25)
+
+.createSaleForm
+	margin-bottom: 50px
+	.form
+		@include size(100%, 100%)
+		@include flex(start, start, 10px, 10px, row, wrap)	
+
+		div
+			@include size(200px, 50px)
+			@include flex(start, center, 0px, 0px, row, wrap)	
+
+			select
+				@include size(170px, 30px)
+
+			input
+				@include size(170px, 30px)

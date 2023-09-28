@@ -1,0 +1,42 @@
+@import './variables'
+@import './mixins'
+
+.formPage
+	@include size(100%, 100vh)
+	@include flex(center, center, 30px, 30px, column)
+
+	.wrapper
+		@include size(300px, 400px)
+		border-radius: 10px
+		background: $lightGrey
+		.controller
+			@include size(100%, 40px)
+			.controllerBtn
+				@include size(50%, 100%)
+				border: none
+				transition: all 0.2s
+				&:nth-child(1)
+					border-top-left-radius: 10px
+				&:nth-child(2)
+					border-top-right-radius: 10px
+				&:hover
+					background: $red
+					color: $white
+			.activeBtn
+				background: $red
+				color: $white
+
+		form
+			@include size(100%, calc(100% - 40px))
+			@include flex(center, start, 20px, 20px, column)
+			padding: 20px
+
+			.recoverPassword
+				font-size: 0.8rem
+				.redText
+					color: $red
+					font-size: 0.9rem
+					cursor: pointer
+
+
+	
